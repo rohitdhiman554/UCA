@@ -1,6 +1,6 @@
 /* Program to find the square root of number using binary search
  *
- * Compilation: gcc day1_coding _assignment1.c
+ * Compilation: gcc assignment1.c
  * Exicution: ./a.out
  *
  * @Rohitdhiman(1910991113), 18/07/2021
