@@ -2,7 +2,7 @@
 /* 
  * Swap to numbers without using third variable
  * @Rohit Dhiman (1910991113),28/07/2021
- * assignment: C Foundations(question 1)
+ * assignment: C Foundations(question 2)
  */
 #include <stdio.h>
 
