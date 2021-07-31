@@ -1,3 +1,8 @@
+/* 
+ * Swap to numbers without using third variable
+ * @Rohit Dhiman (1910991113),28/07/2021
+ * assignment: C Foundations(question 1)
+ */
 #include <stdio.h>
 void swap(int *x,int *y)
 {
