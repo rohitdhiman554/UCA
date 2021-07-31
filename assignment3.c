@@ -1,6 +1,6 @@
 /*
  * Program to perform selection sort on 3 different type of inputs (Random, sorted, reversly sorted) to calculate the time
-   taken to perform the bubbl:e sort. 
+   taken to perform the selection sort. 
  * Compilation: gcc assignment3.c
  * Exicution: ./a.out
  * Rohit Dhiman (1910991113), 29-07-2021
@@ -73,33 +73,33 @@ void generate_sorted_input ( int initial_size, int incriment) {
     int i;
      
     for (i = 0; i < 8; i++) {
-        int s = initial_size + incriment * i;
+OAOAOAOAOA        int s = initial_size + incriment * i;
         int a[s];
 	for(int x = 0; x < s; x++){
 	    a[x] = x;
 	}
         gettimeofday(&te, NULL);
-        long long start = te.tv_sec * 1000LL + te.tv_usec / 1000;
+OAOAOAOAOA        long long start = te.tv_sec * 1000LL + te.tv_usec / 1000;
         selection_sort(a, s);
         gettimeofday(&te, NULL);
         long long end = te.tv_sec * 1000LL + te.tv_usec / 1000;
         printf("Time taken when array had sorted values %11lld\n",end - start);
-    }
+OAOAOAOAOAOA    }
 }
 
-/* This function inserts a reversly sorted array to a[] and prints the time taken by selection sort to sort the array when
+OAOAOA/* This function inserts a reversly sorted array to a[] and prints the time taken by selection sort to sort the array when
    the input array is reversly sorted
  * Or we can say that this function prints the worst case time complexity of selection sorting algorithm
 */
-
+OAOAOA
 void generate_reverse_sorted_input ( int initial_size, int incriment) {
     struct timeval te;
     int i;
-
+OAOAOAOA
     for (i = 0; i < 8; i++) {
         int s = initial_size + incriment * i;
         int a[s];
-        for(int x = 0; x < s; x++) {
+OA        for(int x = 0; x < s; x++) {
 	    a[x] = s - x - 1;
 	}
         gettimeofday(&te, NULL);
@@ -107,7 +107,7 @@ void generate_reverse_sorted_input ( int initial_size, int incriment) {
 	selection_sort(a, s);
 	gettimeofday(&te, NULL);
 	long long end = te.tv_sec * 1000LL + te.tv_usec / 1000;
-	printf("Time taken when array had reversely sorted values %11lld\n",end - start);
+OAOAOAOAOAOAOAOAOAOAOAOAOA	printf("Time taken when array had reversely sorted values %11lld\n",end - start);
     }
 }
 //main function
