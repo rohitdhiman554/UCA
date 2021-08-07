@@ -2,7 +2,9 @@
  * function squeeze(char*s1 , char* s2) that deletes each character in s1 that matches any character in the string s2.
  * @Rohit Dhiman (1910991113),30/07/2021
  * assignment: C Foundations(question 10)
- */
+*Compilation: gcc ques10.c 
+*Execution: ./a.out
+*/
 #include <stdio.h>
 void squeeze(char *s1,char *s2,int len1,int len2)
 {

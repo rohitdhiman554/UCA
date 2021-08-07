@@ -2,7 +2,9 @@
  * function any( char* s1 , char* s2), which returns the first location in the string1 where any character from the string2 occurs, or  -1 if s1 contains no characters from s2
  * @Rohit Dhiman (1910991113),30/07/2021
  * assignment: C Foundations(question 11)
- */
+*Compilation: gcc ques11.c 
+*Execution: ./a.out
+*/
 #include <stdio.h>
 
 

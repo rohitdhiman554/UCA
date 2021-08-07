@@ -1,6 +1,8 @@
 /* 
  * Swap to numbers without using third variable
  * @Rohit Dhiman (1910991113),28/07/2021
+ * Compilation: gcc ques1.c  
+ * Execution: ./a.out
  * assignment: C Foundations(question 1)
  */
 #include <stdio.h>

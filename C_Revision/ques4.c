@@ -2,6 +2,8 @@
  * Reverse element of an array
  * @Rohit Dhiman (1910991113),28/07/2021
  * assignment: C Foundations(question 4)
+ *Compilation: gcc ques4.c 
+*Execution: ./a.out
  */
 #include <stdio.h>
 void reverse(int arr[],int left,int right)

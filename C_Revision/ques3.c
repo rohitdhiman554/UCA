@@ -2,6 +2,8 @@
  * Count vowels and consonants in String
  * @Rohit Dhiman (1910991113),28/07/2021
  * assignment: C Foundations(question 3)
+ * Compilation: gcc ques3.c
+ *Execution: ./a.out
  */
 #include <stdio.h>
 

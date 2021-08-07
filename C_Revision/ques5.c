@@ -2,7 +2,9 @@
  * Matrix Multiplication
  * @Rohit Dhiman (1910991113),28/07/2021
  * assignment: C Foundations(question 5)
- */
+*Compilation: gcc ques5.c 
+*Execution: ./a.out
+*/
 #include <stdio.h>
 int main()
 {

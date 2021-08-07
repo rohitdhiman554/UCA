@@ -2,7 +2,9 @@
  *  function strend(char *s , char* t) , which returns 1 if the string t occurs at the end of the string s, and zero otherwise
  * @Rohit Dhiman (1910991113),30/07/2021
  * assignment: C Foundations(question 13)
- */
+*Compilation: gcc ques13.c 
+*Execution: ./a.out
+*/
 #include <stdio.h>
 
 int strIndex(char *s,char *t)

@@ -2,7 +2,9 @@
  * function strrindex( char* s , char* t ) which returns the position of the rightmost occurrence of t in s , or - 1 if there is none
  * @Rohit Dhiman (1910991113),30/07/2021
  * assignment: C Foundations(question 12)
- */
+*Compilation: gcc ques12.c 
+*Execution: ./a.out
+*/
 #include <stdio.h>
 
 int strIndex(char *s,char *t)

@@ -1,6 +1,8 @@
 /* 
  * Print Pyramid
  * @Rohit Dhiman (1910991113),28/07/2021
+ *Compilation: gcc ques2.c
+ *Execution: ./a.out
  * assignment: C Foundations(question 2)
  */
 #include <stdio.h>

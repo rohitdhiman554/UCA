@@ -2,7 +2,9 @@
  * String is palindrome or not
  * @Rohit Dhiman (1910991113),28/07/2021
  * assignment: C Foundations(question 6)
- */
+*Compilation: gcc ques6.c 
+*Execution: ./a.out
+*/
 
 #include <stdio.h>
 #include<stdbool.h>

@@ -2,7 +2,9 @@
  *  program to print all input lines that are longer than 80 characters
  * @Rohit Dhiman (1910991113),30/07/2021
  * assignment: C Foundations(question 7)
- */
+*Compilation: gcc ques7.c 
+*Execution: ./a.out
+*/
 #include <stdio.h>
 
 int main()

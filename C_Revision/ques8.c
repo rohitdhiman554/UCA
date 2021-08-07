@@ -3,7 +3,9 @@
  *  function reverse(char* s)  that reverses the character string
  * @Rohit Dhiman (1910991113),30/07/2021
  * assignment: C Foundations(question 8)
- */
+*Compilation: gcc ques8.c 
+*Execution: ./a.out
+*/
 #include <stdio.h>
 void reverse(char *arr,int size)
 {

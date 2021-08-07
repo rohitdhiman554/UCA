@@ -2,7 +2,9 @@
  * function htoi(char* s), which converts a string of hexadecimal digits (including an optional 0x or 0X) into its equivalent integer value.
  * @Rohit Dhiman (1910991113),30/07/2021
  * assignment: C Foundations(question 9)
- */
+*Compilation: gcc ques9.c 
+*Execution: ./a.out
+*/
 #include <stdio.h>
 
 int htoi(char *s)
