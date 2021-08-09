@@ -1,5 +1,5 @@
 /* 
- * Program that converts an arithmetic expression from infix notation to postfix notation.
+ * Program that checks for balanced parentheses
  * @Rohit Dhiman (1910991113),8/07/2021
  * Compilation: gcc ques1.c  
  * Execution: ./a.out
