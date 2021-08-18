@@ -1,0 +1,55 @@
+int largestRectangleArea(int* heights, int heightsSize){
+	int i=0,j,bars=1;
+	bool cal;
+	int max=INT_MIN;
+	for(int i=0;i<heightsSize;i++)
+	{
+		cal=false;
+		bars=1;
+		j=i-1;
+		while(j>=0)
+		{
+			if(heights[j]==heights[i])
+			{
+				cal=true;
+				break;
+
+			}
+			else if(heights[j]>heights[i])
+			{
+				bars++;
+				j--;
+			}
+			else
+			{
+				break;
+			}
+
+		}
+		if(cal==true)
+		{
+			continue;
+		}
+
+		j=i+1;
+		while(j<heightsSize)
+		{
+			if(heights[j++]>=heights[i])
+			{
+				bars++;
+			}
+			else
+			{
+				break;
+			}
+		}
+		int area=heights[i]*bars;
+		if(area>max)
+		{
+			max=area;
+		}
+
+	}
+	return max;
+
+}
