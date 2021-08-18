@@ -1,3 +1,8 @@
+/* 
+ * MinStack LeetCode Problem
+ * @Rohit Dhiman (1910991113),16/08/2021
+ * assignment:stack and queues
+ */
 #define SIZE 30000
 
 typedef struct {
