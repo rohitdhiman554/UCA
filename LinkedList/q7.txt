@@ -1,0 +1,50 @@
+/*
+ *reverse linkedlist between m and n nodes(LeetCode Problem)
+ *
+ * @Rohit Dhiman 1910991113
+ *
+ */
+
+struct ListNode* reverseBetween(struct ListNode* head, int left, int right){
+	if (left == right) {
+		return head;
+	}
+	struct ListNode *leftNode, *rightNode, *temp = head;
+	struct ListNode *leftAdj = temp;
+
+	for (int i = 1; temp != NULL; ++i) {
+		if (i != left && i == left - 1) {
+			leftAdj = temp;
+		}
+		if (i == left) {
+			leftNode = temp;
+		}
+		if (i == right) {
+			rightNode = temp;
+			break;
+		}
+		temp = temp->next;
+	}
+
+	struct ListNode *rightAdj = rightNode->next;
+
+	struct ListNode *prev, *current, *next;
+	prev = rightNode->next;
+	current = leftNode;
+
+	while (current != rightAdj) {
+		next = current->next;
+		current->next = prev;
+		prev = current;
+		current = next;
+	}
+	if (left == 1) {
+		head = rightNode;
+		return head;
+	}
+	leftAdj->next = rightNode;
+	return head;
+}
+
+
+
