@@ -1,0 +1,78 @@
+
+/*
+ *LinkedList palindrome or not (LeetCode Problem)
+ *@author RohitDhiman 1910991113
+ */
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+
+
+bool isPalindrome(struct ListNode* head){
+	struct ListNode *fast=head;
+	struct	ListNode *slow=head;
+	struct	ListNode *second=NULL;
+	struct	ListNode *start=NULL;
+
+	while(fast->next!=NULL&&fast->next->next!=NULL)
+	{
+		if(start==NULL)
+		{
+			start=head;
+		}
+		else
+		{
+			start=start->next;
+		}
+
+		fast=fast->next->next;
+		slow=slow->next;
+
+	}
+	if(fast->next==NULL&&start==NULL)
+	{
+		return true;
+	}
+	if(fast->next==NULL)
+	{
+		second=slow->next;
+		start->next=NULL;
+	}
+	else
+	{
+		second=slow->next;
+		slow->next=NULL;
+
+	}
+	struct ListNode *next=NULL;
+	struct ListNode *prev=NULL;
+	struct ListNode *curr=second;
+	while(curr!=NULL)
+	{
+		next=curr->next;
+		curr->next=prev;
+		prev=curr;
+		curr=next;
+	}
+	second=prev;
+
+	struct ListNode *c1=head;
+	struct ListNode *c2=second;
+	while(c1!=NULL)
+	{
+		if(c1->val!=c2->val)
+		{
+			return false;
+		}
+		c1=c1->next;
+		c2=c2->next;
+
+	}
+	return true;
+
+}

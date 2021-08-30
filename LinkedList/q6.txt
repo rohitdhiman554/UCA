@@ -1,0 +1,42 @@
+/*
+ *Remove Nth Node from end(LeetCode Problem)
+ *
+ * @Rohit Dhiman 1910991113
+ *
+ */
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+
+
+struct ListNode* removeNthFromEnd(struct ListNode* head, int k){
+	struct ListNode *trav1=head;
+	struct	ListNode *trav2=head;
+
+	for(int i=0;i<k+1;i++)
+	{
+		if(trav2==NULL)
+		{
+			return head=head->next;
+		}
+		trav2=trav2->next;
+	}
+	while(trav2!=NULL)
+	{
+		trav1=trav1->next;
+		trav2=trav2->next;
+	}
+	struct ListNode *temp=trav1->next;
+	trav1->next=temp->next;
+
+
+	return head;
+
+}
+
+

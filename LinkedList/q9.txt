@@ -1,0 +1,48 @@
+/*
+ *Rotate a Linkedlist.(LeetCode Problem)
+ *
+ * @Rohit Dhiman 1910991113
+ *
+ */
+
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+
+
+struct ListNode* rotateRight(struct ListNode* head, int k){
+	if(head==NULL||head->next==NULL)
+	{
+		return head;
+	}
+
+	struct ListNode *temp=head;
+	int l=0;
+	while(temp->next!=NULL)
+	{
+		l++;
+		temp=temp->next;
+	}
+	l++;
+	temp->next=head;
+	k=k%l;
+	k=l-k;
+
+
+
+	struct ListNode *slow=head;
+	while(k-->0)
+	{
+		slow=slow->next;
+		temp=temp->next;
+	}
+	head=slow;
+	temp->next=NULL;
+	return head;
+
+}

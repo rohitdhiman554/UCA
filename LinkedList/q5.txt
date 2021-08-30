@@ -1,0 +1,49 @@
+/*
+ *Reverse Sorted LinkedList (LeetCode Problem)
+ *@author RohitDhiman 1910991113
+*/
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+
+
+struct ListNode* deleteDuplicates(struct ListNode* head){
+    struct ListNode *anshead=NULL;
+      struct  ListNode *anstail=NULL;
+      struct  ListNode *curr=head;
+        while(curr!=NULL)
+        {
+            if(curr->next!=NULL&&curr->val==curr->next->val)
+            {
+                while(curr->next!=NULL&&curr->val==curr->next->val)
+                {
+                    curr=curr->next;
+                }
+            }
+            else
+            {
+                if(anshead==NULL)
+                {
+                    anshead=curr;
+                    anstail=curr;
+                }
+                else
+                {
+                    anstail->next=curr;
+                    anstail=anstail->next;
+                }
+            }
+            curr=curr->next;
+        }
+        if(anshead!=NULL)
+        {
+            anstail->next=NULL;
+        }
+        return anshead;
+
+}
